@@ -4,10 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
+
 public class JenkinsScript {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Hi");
         // WebDriver dr = new FirefoxDriver();
+        //File file=new File("C:\\Program Files\\Drivers");
+        System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Drivers");
         WebDriver dr = new ChromeDriver();
         dr.get("https://www.google.com/");
         // dr.navigate().to("https://www.google.com");
