@@ -1,14 +1,20 @@
+package Jenkins;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class mvnTest {
-    public static void main(String[] args){
+public class JenkinsScript {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println("Hi");
+        // WebDriver dr = new FirefoxDriver();
         WebDriver dr = new ChromeDriver();
         dr.get("https://www.google.com/");
+        // dr.navigate().to("https://www.google.com");
         System.out.println("Trying to open the browser");
+        Thread.sleep(3000);
         dr.findElement(By.xpath("//input[@id='lst-ib']")).sendKeys("Ken Trump");
-        dr.findElement(By.xpath("//input[@name='btnK']")).click();
+        Thread.sleep(3000);
+        dr.findElement(By.xpath("//input[@value='Google Search']")).click();
     }
 }
