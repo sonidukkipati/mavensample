@@ -12,7 +12,7 @@ public class JenkinsScript {
         // WebDriver dr = new FirefoxDriver();
         //Adding some syste,setproperty
         //File file=new File("C:\\Program Files\\Drivers");
-        System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Drivers");
+        System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Drivers\\chromedriver");
         WebDriver dr = new ChromeDriver();
         dr.get("https://www.google.com/");
         // dr.navigate().to("https://www.google.com");
