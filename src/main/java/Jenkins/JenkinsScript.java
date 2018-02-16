@@ -10,6 +10,7 @@ public class JenkinsScript {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Hi");
         // WebDriver dr = new FirefoxDriver();
+        //Adding some syste,setproperty
         //File file=new File("C:\\Program Files\\Drivers");
         System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Drivers");
         WebDriver dr = new ChromeDriver();
